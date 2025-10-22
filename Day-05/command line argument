@@ -1,0 +1,23 @@
+import sys 
+  
+def add(x, y):
+    a=x + y
+    return a
+
+def sub(x, y):
+    s=x - y
+    return y
+
+x = float(sys.argv[1])
+operation= sys.argv[2]
+y = float(sys.argv[3])
+
+if operation == "add":
+    output= add(x, y)
+    print(output)
+elif operation == "sub":
+    output = sub(x, y)
+    print(output)
+else:
+    print("Unknown operation:", operation)
+  
