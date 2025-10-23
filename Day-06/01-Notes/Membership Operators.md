@@ -26,3 +26,19 @@ colors = ["red", "green", "blue"]
 result = "yellow" not in colors
 # result will be True
 ```
+
+
+fruits = ['apple', 'banana', 'cherry']
+print('banana' in fruits)    # True
+print('grape' in fruits)     # False
+
+print('grape' not in fruits) # True
+print('apple' not in fruits) # False
+
+s = "hello world"
+print('h' in s)               # True
+print('H' in s)               # False  # case‐sensitive
+
+d = {'dog': 'mammal', 'cat': 'mammal'}
+print('dog' in d)             # True  (key exists)
+print('mammal' in d)          # False (value only, not key)
