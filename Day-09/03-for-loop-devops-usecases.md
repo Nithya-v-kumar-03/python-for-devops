@@ -6,10 +6,12 @@
 
    ```bash
    servers=("server1" "server2" "server3")
-   for server in "${servers[@]}"; do
+   for server in "${servers[@]}"; do                 
        configure_monitoring_agent "$server"
    done
    ```
+The syntax ${array[@]} expands each element separately (so each list item remains distinct) rather than being combined into one string
+
 
 2. **Deploying Configurations to Multiple Environments:**
 
