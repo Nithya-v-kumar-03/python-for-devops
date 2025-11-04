@@ -2,7 +2,7 @@ import os
 
 def list_files_in_folder(folder_path):
     try:
-        files = os.listdir(folder_path)
+        files = os.listdir(folder_path)       #list all the file on the folder if we use listdir
         return files, None
     except FileNotFoundError:
         return None, "Folder not found"
