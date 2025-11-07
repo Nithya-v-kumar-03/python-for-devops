@@ -1,7 +1,7 @@
 # Program to demonstrate integration with GitHub to fetch the 
 # details of Users who created Pull requests(Active) on Kubernetes Github repo.
 
-import requests
+import requests   #to handle API we use request
 
 # URL to fetch pull requests from the GitHub API
 url = f'https://api.github.com/repos/kubernetes/kubernetes/pulls'
