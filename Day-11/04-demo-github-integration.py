@@ -21,7 +21,7 @@ if response.status_code == 200:
     for pull in pull_requests:
         creator = pull['user']['login']
         if creator in pr_creators:
-            pr_creators[creator] += 1
+            pr_creators[creator] += 1        #If the creator is already in pr_creators, increment their count; otherwise add them with count 1.
         else:
             pr_creators[creator] = 1
 
