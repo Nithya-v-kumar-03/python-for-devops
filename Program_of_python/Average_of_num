@@ -1,0 +1,17 @@
+Average=
+Total count of numbers/Sum of all numbers
+	​
+
+def Average():
+    numbers=input("Enter the num to find the average:").split()
+    list_avg =list(numbers)
+    count =0
+    for num in numbers:
+        count += float(num)
+
+    average_of_num = count/len(numbers)
+    print("Average:",average_of_num)
+    
+Average()
+
+
