@@ -35,7 +35,7 @@ payload = json.dumps( {
     "project": {
       "key": "AB"
     },
-    "issuetype": {
+    "issuetype": {                //click on 3 dots>>configure board>>issue types>>select story>> in the URL u can find id
       "id": "10006"
     },
     "summary": "First JIRA Ticket",
