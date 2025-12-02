@@ -63,3 +63,14 @@ def createJira():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
+------------------------------------------------------------------------
+algorithm
+1)understand API
+2)convert python script to API because if we are using normal script from githunb we need to login ec2 n run the script ,if it is API it will take care
+3) deploy it to server
+4) github webhook
+5) condition (add condition only if user comments /jira)
+
+      webhook        take to API of python               python talk to jira API
+github----------->ec2(python script)--------------------->jira
