@@ -74,3 +74,6 @@ algorithm
 
       webhook        take to API of python               python talk to jira API
 github----------->ec2(python script)--------------------->jira
+
+
+For API we are using Flask framework
