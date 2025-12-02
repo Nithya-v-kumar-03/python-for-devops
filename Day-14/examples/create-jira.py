@@ -33,7 +33,7 @@ payload = json.dumps( {
       "version": 1
     },
     "project": {
-      "key": "AB"
+      "key": "AB"                //project key
     },
     "issuetype": {                //click on 3 dots>>configure board>>issue types>>select story>> in the URL u can find id
       "id": "10006"
