@@ -5,7 +5,7 @@ def update_server_config(file_path, key, value):
 
     # Update the configuration value for the specified key
     with open(file_path, 'w') as file:
-        for line in lines:
+        for line in lines:                                              //reads each n every line from lines
             # Check if the line starts with the specified key
             if key in line:                                               #key which u hv given in function
                 # Update the line with the new value
