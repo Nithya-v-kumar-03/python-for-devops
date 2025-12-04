@@ -4,7 +4,7 @@ import requests
 from requests.auth import HTTPBasicAuth            //To authenticate jira account & we are using request.auth package
 import json                                        //as we are using json 
 
-url = "https://veeramallaabhishek.atlassian.net/rest/api/3/project"
+url = "https://veeramallaabhishek.atlassian.net/rest/api/3/project"   //url of jira
 
 API_TOKEN=""                                                     //api token>>jira>>profile>>manage account>>security>>create API
 
