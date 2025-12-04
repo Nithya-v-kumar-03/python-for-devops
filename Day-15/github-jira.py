@@ -8,7 +8,7 @@ from flask import Flask
 app = Flask(__name__)
 
 # Define a route that handles GET requests
-@app.route('/createJira', methods=['POST'])
+@app.route('/createJira', methods=['POST'])                   //post it create data
 def createJira():
 
     url = "https://veeramallaabhishek.atlassian.net/rest/api/3/issue"
@@ -77,3 +77,8 @@ github----------->ec2(python script)--------------------->jira
 
 
 For API we are using Flask framework
+we have api types
+GET ---retrive the data
+post----create the data
+put-----update the data
+delete----remove data
