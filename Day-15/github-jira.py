@@ -8,7 +8,7 @@ from flask import Flask
 app = Flask(__name__)
 
 # Define a route that handles GET requests
-@app.route('/createJira', methods=['POST'])                   //post it create data
+@app.route('/createJira', methods=['POST'])                   //post it create data(@ is a decorate it is used to execute first before the main program)
 def createJira():
 
     url = "https://veeramallaabhishek.atlassian.net/rest/api/3/issue"
