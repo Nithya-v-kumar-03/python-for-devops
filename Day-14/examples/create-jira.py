@@ -10,6 +10,7 @@ API_TOKEN = ""      //jira>>profile>>manage your account>>security the down we c
 
 auth = HTTPBasicAuth("", API_TOKEN)
 
+//Jira api docs in browser>>projects>>get all projects
 headers = {
   "Accept": "application/json",
   "Content-Type": "application/json"
