@@ -8,7 +8,7 @@ from flask import Flask
 #create a flask app instance
 app = Flask(__name__)
 
-# Define a route that handles GET requests
+# Define a route that handles GET requests                    //here we are using decorate if someone create issue with / create a jira ticket
 @app.route('/createJira', methods=['POST'])                   //post it create data(@ is a decorate it is used to execute first before the main program to check someone is authenticated to talk with API)
 def createJira():
 
