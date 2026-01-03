@@ -34,7 +34,7 @@ payload = json.dumps( {
       "version": 1
     },
     "project": {
-      "key": "AB"                //project key
+      "key": "AB"                //project key(click on project u can see the project key under jira
     },
     "issuetype": {                //click on 3 dots>>configure board>>issue types>>select story>> in the URL u can find id
       "id": "10006"
