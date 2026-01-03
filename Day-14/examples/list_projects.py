@@ -1,6 +1,6 @@
 # This code sample uses the 'requests' library:
 # http://docs.python-requests.org
-import requests
+import requests                                    //to make API calls
 from requests.auth import HTTPBasicAuth            //To authenticate jira account & we are using request.auth package
 import json                                        //as we are using json 
 
