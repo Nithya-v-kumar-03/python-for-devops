@@ -6,7 +6,7 @@ import json
 
 url = "https://veeramallaabhishek.atlassian.net/rest/api/3/issue"
 
-API_TOKEN = ""
+API_TOKEN = ""      //jira>>profile>>manage your account>>security the down we can select the create api account
 
 auth = HTTPBasicAuth("", API_TOKEN)
 
