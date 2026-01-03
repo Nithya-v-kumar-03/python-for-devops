@@ -120,3 +120,158 @@ block
 ...   # (a long list of device‑file and subsystem names)
 
 Error in /feb: Folder not found
+
+
+-----------------------------------------------------------------------------------------
+🟢 Program starts running
+Line 1
+import os
+
+
+Python loads the os module into memory
+
+Nothing is printed
+
+Program continues
+
+🟢 Function definitions (no execution yet)
+Line 3
+def list_files_in_folder(folder_path):
+
+
+Python defines the function
+
+Code inside is not executed now
+
+Python moves on
+
+Line 14
+def main():
+
+
+Python defines the main() function
+
+Still no execution
+
+🟢 Entry point check
+Line 30
+if __name__ == "__main__":
+
+
+Python checks:
+
+Is this file run directly? → Yes
+
+Condition is True
+
+Line 31
+main()
+
+
+Python calls main()
+
+Execution jumps into main()
+
+🟢 Inside main()
+Line 16
+folder_paths = input(
+    "Enter a list of folder paths separated by spaces: "
+).split()
+
+
+Step by step:
+
+input() pauses the program
+
+User types:
+
+/tmp /wrongfolder
+
+
+input() returns the string:
+
+"/tmp /wrongfolder"
+
+
+.split() breaks it into a list:
+
+['/tmp', '/wrongfolder']
+
+
+folder_paths now stores that list
+
+🟢 Loop starts
+Line 20
+for folder_path in folder_paths:
+
+
+Loop starts
+
+First value:
+
+folder_path = '/tmp'
+
+🟢 First loop iteration (/tmp)
+Line 21
+files, error_message = list_files_in_folder(folder_path)
+
+
+Calls list_files_in_folder('/tmp')
+
+Execution jumps into that function
+
+🟢 Inside list_files_in_folder('/tmp')
+Line 5
+try:
+
+
+Python prepares to catch errors
+
+Line 6
+files = os.listdir(folder_path)
+
+
+OS is asked to list files inside /tmp
+
+Suppose /tmp contains:
+
+['a.txt', 'b.log']
+
+Line 7
+return files, None
+
+
+Function returns:
+
+(['a.txt', 'b.log'], None)
+
+
+Execution goes back to main()
+
+🟢 Back in main()
+Line 23
+if files is not None:
+
+
+files is ['a.txt', 'b.log']
+
+Condition is True
+
+Line 24
+print(f"Files in {folder_path}:")
+
+
+Prints:
+
+Files in /tmp:
+
+Line 25–26
+for file in files:
+    print(file)
+
+
+Prints each file:
+
+a.txt
+b.log
+
